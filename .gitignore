@@ -1,0 +1,18 @@
+# Ignore the PDF and other non-web files
+*.pdf
+*.PDF
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+
+# Node (if ever needed)
+node_modules/
+
+# Misc
+hi
