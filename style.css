@@ -525,3 +525,24 @@ body {
   .logo-text { display: none; }
   .hero-left { padding-top: 4rem; }
 }
+
+
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .site-logo {
+        height: 40px !important; 
+    }
+    
+    .nav-links {
+        gap: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .site-logo {
+        height: 30px !important; 
+    }
+}
+
