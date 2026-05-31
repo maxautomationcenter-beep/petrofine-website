@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <style>
+<style>
   @media (max-width: 860px) {
       .diagonal-divider { display: none !important; }
-      /* Shrunk the red height from 55% to 45% */
-      .bg-red { width: 100% !important; height: 45% !important; clip-path: none !important; }
-      /* Expanded the white height to 55% and moved its starting point UP to 45% */
-      .bg-white { width: 100% !important; height: 55% !important; top: 45% !important; left: 0 !important; clip-path: none !important; }
+      
+      /* Backgrounds */
+      .bg-red { 
+          width: 100% !important; height: 45% !important; 
+          position: absolute !important; top: 0 !important; clip-path: none !important; 
+      }
+      .bg-white { 
+          width: 100% !important; height: 55% !important; 
+          position: absolute !important; top: 45% !important; left: 0 !important; clip-path: none !important; 
+      }
+
+      /* Push the text down so it starts below the red/white line */
+      .brand-block {
+          padding-top: 50px !important;
+      }
   }
 </style>
   <meta charset="UTF-8" />
