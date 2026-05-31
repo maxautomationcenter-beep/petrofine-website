@@ -546,3 +546,13 @@ body {
     }
 }
 
+
+
+
+/* Force the background to split horizontally when content stacks */
+@media (max-width: 860px) {
+    .bg-white {
+        clip-path: polygon(0% 55%, 100% 45%, 100% 100%, 0% 100%) !important;
+    }
+}
+
