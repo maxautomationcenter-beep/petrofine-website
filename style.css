@@ -550,9 +550,26 @@ body {
 
 
 /* Force the background to split horizontally when content stacks */
+/* Force the background to split top-to-bottom on mobile */
 @media (max-width: 860px) {
+    /* 1. Hide the left-to-right desktop graphic */
+    .diagonal-divider {
+        display: none !important;
+    }
+
+    /* 2. Make the red block cover the top half */
+    .bg-red {
+        width: 100% !important;
+        height: 55% !important;
+    }
+
+    /* 3. Make the white block cover the bottom half */
     .bg-white {
-        clip-path: polygon(0% 55%, 100% 45%, 100% 100%, 0% 100%) !important;
+        width: 100% !important;
+        height: 45% !important;
+        top: 55% !important;
+        left: 0 !important;
+        clip-path: none !important; 
     }
 }
 
